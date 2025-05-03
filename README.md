@@ -3,6 +3,19 @@ This is my Coursework of Computer Vision(COMP3065)
 
 # Project Guidance
 
+## Project Structure
+The project structure is as follows:
+```
+├── main.py                    # Main script for processing videos and generating panoramas
+├── autocrop.py                # Script for automatically cropping black borders from panoramas
+├── records/                   # Input folder for .mov video files
+├── panoramas/                 # Output folder for generated panorama images
+├── panoramas_detect/          # Output folder for object detection and rotation-corrected panoramas
+├── panoramas_cropped/         # Output folder for cropped panoramas
+├── ultralytics_yolov5_master/ # Folder containing the YOLOv5 model files (local repository)
+```
+
+
 ## Requirements
 
 To run this program, you need to install the following Python libraries:
