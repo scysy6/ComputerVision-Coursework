@@ -26,7 +26,7 @@ pip install opencv-python torch numpy Pillow
 Place the `.MOV` video file in the `records` folder. The program will automatically search for videos in the `records` folder and generate panoramic images in the `panorama` folder. The `panorama_detect` folder contains images  that have been corrected for rotation based on object detection.
 
 2.Generate Panoramic Images
-Run main.py to process the .MOV video files and generate panorama images:
+Run main.py to process the .mov video files and generate panorama images:
 ```bash
 python main.py
 ```
