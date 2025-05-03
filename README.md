@@ -13,7 +13,10 @@ The project structure is as follows:
 ├── panoramas_detect/          # Output folder for object detection and rotation-corrected panoramas
 ├── panoramas_cropped/         # Output folder for cropped panoramas
 ├── ultralytics_yolov5_master/ # Folder containing the YOLOv5 model files (local repository)
+├── ultralytics_yolov5_master.zip/ # Zip file for the folder containing the YOLOv5 model files (local repository)
 ```
+
+
 
 
 ## Requirements
@@ -41,6 +44,10 @@ In the code, the following line is used to load the model:
 model = torch.hub.load('./ultralytics_yolov5_master', 'custom', path='yolov5s.pt', source='local')
 ```
 The model (yolov5s.pt) is loaded from the `ultralytics_yolov5_master folder`, which contains the official YOLOv5 repository and pre-trained weights.
+
+### Important Note
+
+If some files in `ultralytics_yolov5_master` were missing during the upload process and this causes the code to fail, please extract the ZIP file you uploaded and replace the missing YOLOv5 model files (located in `ultralytics_yolov5_master/`) with the ones from the ZIP file. Then, try running the code again.
 
 
 ## Instruction
