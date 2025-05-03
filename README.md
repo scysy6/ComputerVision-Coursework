@@ -16,9 +16,6 @@ The project structure is as follows:
 ├── ultralytics_yolov5_master.zip/ # Zip file for the folder containing the YOLOv5 model files (local repository)
 ```
 
-
-
-
 ## Requirements
 
 To run this program, you need to install the following Python libraries:
@@ -36,7 +33,7 @@ Before running the code, you need to install the required libraries. You can ins
 pip install opencv-python torch numpy Pillow
 ```
 
-## YOLOv5 Model Loading
+### YOLOv5 Model Loading
 This project uses the YOLOv5 model for object detection, which is loaded through the `torch.hub.load` function from the local path.
 
 In the code, the following line is used to load the model:
@@ -45,15 +42,15 @@ model = torch.hub.load('./ultralytics_yolov5_master', 'custom', path='yolov5s.pt
 ```
 The model (yolov5s.pt) is loaded from the `ultralytics_yolov5_master folder`, which contains the official YOLOv5 repository and pre-trained weights.
 
-### Important Note
+##### Important Note
 
-If some files in `ultralytics_yolov5_master` were missing during the upload process and this causes the code to fail, please extract the ZIP file you uploaded and replace the missing YOLOv5 model files (located in `ultralytics_yolov5_master/`) with the ones from the ZIP file. Then, try running the code again.
+If some files in `ultralytics_yolov5_master` were missing during the upload process and this causes the code to fail running, please extract the ZIP file you uploaded and replace the missing YOLOv5 model files (located in `ultralytics_yolov5_master/`) with the ones from the ZIP file. Then, try running the code again.
 
 
-## Instruction
+## Operation Instruction
 
 1.Place the Video Files
-Place the `.MOV` video file in the `records` folder. The program will automatically search for videos in the `records` folder and generate panoramic images in the `panorama` folder. The `panorama_detect` folder contains images  that have been corrected for rotation based on object detection.
+Place the `.mov` video file in the `records` folder. The program will automatically search for videos in the `records` folder and generate panoramic images in the `panorama` folder. The `panorama_detect` folder contains images  that have been corrected for rotation based on object detection.
 
 2.Generate Panoramic Images
 Run main.py to process the .mov video files and generate panorama images:
