@@ -1,7 +1,25 @@
 # ComputerVision-Coursework
 This is my Coursework of Computer Vision(COMP3065)
 
-# Project Instructions
+# Project Guidance
+
+## Requirements
+
+To run this program, you need to install the following Python libraries:
+
+- `opencv-python`: For video processing and stitching.
+- `torch`: For loading the YOLOv5 model.
+- `numpy`: For handling numerical operations.
+- `Pillow`: For working with images.
+
+- ## Installation
+
+Before running the code, you need to install the required libraries. You can install them by running the following command in your terminal:
+
+```bash
+pip install opencv-python torch numpy Pillow
+
+## Instruction
 
 1. Place the `.MOV` video file in the `records` folder, and then run `main.py`.  
    The program will search for videos in the `records` folder and generate panoramic images in the `panorama` folder. The `panorama_detect` folder contains images that have been corrected for rotation.
