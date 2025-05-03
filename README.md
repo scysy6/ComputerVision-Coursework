@@ -44,7 +44,7 @@ The model (yolov5s.pt) is loaded from the `ultralytics_yolov5_master folder`, wh
 
 ##### Important Note
 
-If some files in `ultralytics_yolov5_master` were missing during the upload process and this causes the code to fail running, please extract the ZIP file you uploaded and replace the missing YOLOv5 model files (located in `ultralytics_yolov5_master/`) with the ones from the ZIP file. Then, try running the code again.
+If some files in `ultralytics_yolov5_master` were missing during the upload process and this causes the code to fail running, please extract the ZIP file `ultralytics_yolov5_master.zip` I uploaded and replace the original `ultralytics_yolov5_master` with the one from the ZIP file. Then, try running the code again.
 
 
 ## Operation Instruction
