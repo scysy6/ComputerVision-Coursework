@@ -21,13 +21,13 @@ pip install opencv-python torch numpy Pillow
 ```
 
 ## YOLOv5 Model Loading
-This project uses the YOLOv5 model for object detection, which is loaded through the torch.hub.load function from the local path.
+This project uses the YOLOv5 model for object detection, which is loaded through the `torch.hub.load` function from the local path.
 
 In the code, the following line is used to load the model:
 ```bash
 model = torch.hub.load('./ultralytics_yolov5_master', 'custom', path='yolov5s.pt', source='local')
 ```
-The model (yolov5s.pt) is loaded from the ultralytics_yolov5_master folder, which contains the official YOLOv5 repository and pre-trained weights.
+The model (yolov5s.pt) is loaded from the `ultralytics_yolov5_master folder`, which contains the official YOLOv5 repository and pre-trained weights.
 
 
 ## Instruction
